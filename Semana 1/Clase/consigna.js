@@ -15,3 +15,19 @@
  * Recuerda seguir las reglas básicas de sintaxis y formateo en JavaScript y comentar tu código para explicar lo que hace cada parte.
  */
 
+let nombre = prompt("¿Como te llamas?")
+let edad
+
+let aniosQueFaltan = 37
+
+edad = Number(prompt("¿Cuantos años tenes?"))
+// edad = parseInt(prompt("¿Cuantos años tenes?"))
+
+
+
+edad = edad + aniosQueFaltan
+
+
+alert("Hola señor " + nombre + "\n" + "Vas a tener " + edad )
+
+
