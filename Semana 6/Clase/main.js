@@ -1,4 +1,4 @@
-const pokemon = [
+const Pokemon = [
     {
         name: "bulbasaur",
         id: 1,
@@ -161,3 +161,59 @@ const pokemon = [
     }
 ];
 
+// function porCadaUno(array, funcion){
+//     for (let i = 0; i < array.length; i++) {
+//         funcion(array[i])
+//     }
+// }
+
+// function muestraNombreDePokemon(pokemon){
+//     console.log(pokemon.name)
+// }
+
+// porCadaUno(Pokemon, muestraNombre)
+
+
+Pokemon.forEach((el)=>{
+    console.log(el)
+})
+
+const nombrePokemon = Pokemon.map((el)=> {
+    return {
+        nombre: el.name,
+        tipos: el.type
+    }
+})
+
+console.log(nombrePokemon)
+
+const buscadoraDePokemon = (el)=>{
+    return (el.base_experience > 200 && el.weight > 11900)
+}
+
+const pokemonExp = Pokemon.find(buscadoraDePokemon)
+
+console.log(pokemonExp)
+
+const pokemonExpSome = Pokemon.some(buscadoraDePokemon)
+
+console.log(pokemonExpSome)
+
+const pokemonTipoNormal = Pokemon.filter((el)=>{
+    return el.type.includes("normal")
+})
+
+console.log(pokemonTipoNormal)
+
+const sumaBaseDeExperiencia = Pokemon.reduce((acc, el)=>{
+    return acc + el.base_experience
+}, 0)
+
+console.log(sumaBaseDeExperiencia)
+
+
+Pokemon.sort((a, b)=>{
+    return a.weight - b.weight
+})
+
+console.log(Pokemon)

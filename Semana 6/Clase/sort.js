@@ -24,16 +24,15 @@
 let frutas = ['manzana', 'pera', 'banana', 'uva']
 
 // Ordenar en orden ascendente (alfabético)
-frutas.sort()
 
 console.log(frutas) // Salida: ['banana', 'manzana', 'pera', 'uva']
 
 // Ordenar en orden descendente (alfabético inverso)
-frutas.sort(function(a, b) {
+frutas.sort((a, b) => {
     // Si 'a' es menor que 'b', retorna 1 para colocar 'a' después de 'b'
-    if(a < b) return 1
+    if(a < b) return -1
     // Si 'a' es mayor que 'b', retorna -1 para colocar 'a' antes de 'b'
-    if(a > b) return -1
+    if(a > b) return 1
     // Si 'a' y 'b' son iguales, retorna 0 para dejarlos en sus posiciones actuales
     return 0
 });
