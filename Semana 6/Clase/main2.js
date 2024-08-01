@@ -92,17 +92,33 @@ function stockManejador(producto, cantidad){
     })
 
     if(estaONoEsta){
-        let objetoDelCarrito = carrito.find((el)=>{
+        let objetoEnDB = productosLibreria.find((el)=>{
             return el.id === producto.id
         })
-        objetoDelCarrito.stock += cantidad
+        if(cantidad > objetoEnDB.stock){
+            alert("Si te vendemos, te debemos")
+        }else{
+            let objetoDelCarrito = carrito.find((el)=>{
+                return el.id === producto.id
+            })
+            objetoDelCarrito.stock += cantidad
+            objetoEnDB.stock -= cantidad
+        }
     }else{
-        agregadoraDeCarrito({
-            nombre: producto.nombre,
-            precio: producto.precio,
-            id: producto.id,
-            stock: cantidad
+        let objetoEnDB = productosLibreria.find((el)=>{
+            return el.id === producto.id
         })
+        if(cantidad > objetoEnDB.stock){
+            alert("Si te vendemos, te debemos")
+        }else{
+            objetoEnDB.stock -= cantidad
+            agregadoraDeCarrito({
+                nombre: producto.nombre,
+                precio: producto.precio,
+                id: producto.id,
+                stock: cantidad
+            })
+        }
     }
 }
 
@@ -142,18 +158,55 @@ function mostrarElCarrito(){
     alert(mensaje)
 }
 
+function filtradoraPorCategoria(categoria){
+    const arrayFiltrado = productosLibreria.filter(el=>{
+        return el.categoria.toLowerCase() === categoria.toLowerCase()
+    })
+
+    let mensaje = "Los productos filtrados:\n"
+    arrayFiltrado.forEach(el =>{
+        mensaje += `${el.nombre}\n`
+    })
+
+    alert(mensaje)
+}
+
+function logicaDeFiltrado(){
+    let categoria = prompt("De que categoria quiere buscar")
+    filtradoraPorCategoria(categoria)
+}
+
+function busquedaAPartirDeID(id){
+    let objetoABuscar = productosLibreria.find((el)=>{
+        return el.id === id
+    })
+    if(objetoABuscar){
+        alert(`El producto que estaba buscando es este:\n Nombre: ${objetoABuscar.nombre}\n Categoria: ${objetoABuscar.categoria}\n Precio: ${objetoABuscar.precio}`)
+    }else{
+        alert("El objeto que busca no esta aqui")
+    }
+}
+
+function logicaDeBusqueda(){
+    let id = parseInt(prompt("¿Que objeto busca?"))
+    busquedaAPartirDeID(id)
+
+}
+
 while(bandera){
-    let opciones = parseInt(prompt("¿Que quiere hacer?\n1-comprar\n2-filtrar\n3-buscar"))
+    let opciones = parseInt(prompt("¿Que quiere hacer?\n1-comprar\n2-filtrar\n3-buscar\n4-terminar"))
 
     switch(opciones){
         case 1:
             logicaDeCompra()
             break
         case 2:
-            //Logica de filtrado
+            logicaDeFiltrado()
             break
         case 3:
-            //Logica de busqueda
+            logicaDeBusqueda()
+            break
+        case 4:
             break
         default:
             alert("Opción incorrecta")
@@ -163,3 +216,4 @@ while(bandera){
 }
 
 mostrarElCarrito()
+console.log(productosLibreria)
