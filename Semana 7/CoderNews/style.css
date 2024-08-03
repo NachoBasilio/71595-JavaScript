@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+:root{
+    --color-primario-claro: #E3FEF7;
+    --color-secundario-claro: #77B0AA;
+    --color-primario-oscuro: #135D66;
+    --color-secundario-oscuro: #003C43;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+   
+    background-color: var(--color-secundario-claro);
+    color: var(--color-primario-oscuro);
+    height: 100%;
+}
+
+.bodyDark{
+    background-color: var(--color-secundario-oscuro);}
+
+.Container-Mayor{
+
+    display: grid;
+    grid-template-rows: auto 40px 1fr;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas: 
+    "section-left main section-right"
+    "section-left main section-right"
+    "section-left main section-right";
+    padding: 30px 10px 0 10px;
+
+}
+
+.Encabezado{
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Encabezado h1 {
+    font-size: 4rem;
+}
+
+.Encabezado h3 {
+    padding-left: 200px;
+}
+
+.Categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+
+}
+
+.Categorias ul{
+    display: flex;
+    list-style: none;
+}
+
+.Categorias ul li{
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.Seccion-Left{
+    grid-area: section-left;
+    background-color: var(--color-primario-oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 600px;
+    background-image: url("https://i.pinimg.com/736x/51/d5/af/51d5af4c2f68b0261bb96bf7b8b8abac.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.Seccion-Left p{
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    text-align: center;  
+}
+
+.Seccion-Left h5{
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    text-align: center;  
+
+}
+
+
+.Seccion-Right{
+    grid-area: section-right;
+    background-color: var(--color-primario-oscuro);
+    max-width: 100%;
+    height: 600px;
+    background-image: url("https://www.vivaplaya.net/viva/wp-content/uploads/2022/04/amanecer-playa-del-carmen-viva-playa.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Seccion-Right p{
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    text-align: center;  
+    font-size: 3rem;
+}
+
+.Seccion-Right h5{
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    text-align: center;  
+}
+
+.Container-Main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card h3{
+    font-size: 2rem;
+    padding: 10px;
+    background-color: var(--color-primario-oscuro);
+    color: white;
+    text-align: center;
+}
+
+.card p{
+    padding: 10px;
+    color: black;
+    text-align: justify;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ModoOscuro{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--color-primario-oscuro);
+    color: white;
+}
+
+.ModoOscuro:hover{
+    cursor: pointer;
+    background-color: var(--color-secundario-oscuro);
+}

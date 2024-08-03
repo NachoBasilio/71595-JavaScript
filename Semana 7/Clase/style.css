@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+img{
+    display: block;
+    width: 1000pX;
+    margin: 0 auto;
+}
+
+.LlamadosADOM{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.eventos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 1000px;
+}
+
+.eventos button{
+    background-color: #0071bc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.eventos button:hover{
+    background-color: #00a1e4;
+}
+
+.eventos input{
+    width: 40%;
+    padding: 10px;
+    margin-top: 1rem;
+    margin: 0 auto;
+}
+
+.eventos form{
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #686678;
+    margin: 0 auto;
+}
+
+.eventos form label{
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fondoRojo{
+    background-color: #ff0000;
+}
+
+#nodoPadre{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
