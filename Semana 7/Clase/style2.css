@@ -1,0 +1,16 @@
+#main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.contenedor{
+    width: 100px;
+}
+
+
+.contenedor img{
+    width: 100px;
+    height: 200px;
+}
