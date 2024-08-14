@@ -1,0 +1,62 @@
+/* Estilo general para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para el h1 */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d32f2f; /* Rojo oscuro */
+}
+
+/* Estilo para el contenedor principal con la clase container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo para la imagen */
+img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: brightness(0) saturate(100%);
+}
+
+/* Estilo para la entrada de texto */
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el botón */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d32f2f; /* Rojo oscuro */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b71c1c; /* Rojo más oscuro */
+}

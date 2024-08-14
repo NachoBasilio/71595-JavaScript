@@ -1,0 +1,62 @@
+[
+      {
+        "titulo": "Lápiz HB",
+        "descripcion": "Lápiz de grafito de alta calidad, ideal para dibujo y escritura.",
+        "precio": 45.00,
+        "imagen": "https://static.vecteezy.com/system/resources/thumbnails/021/938/696/small_2x/black-pencil-color-isolated-on-a-transparent-background-png.png"
+      },
+      {
+        "titulo": "Cuaderno",
+        "descripcion": "Cuaderno tamaño A5 con tapa dura y 200 hojas de papel marfil.",
+        "precio": 850.00,
+        "imagen": "https://images.vexels.com/media/users/3/128313/isolated/preview/01fb3e375286d98cbc46c50e917db249-icono-plano-de-cuaderno.png"
+      },
+      {
+        "titulo": "Bolígrafo azul",
+        "descripcion": "Bolígrafo de tinta azul, trazo medio, ideal para la oficina o la escuela.",
+        "precio": 25.00,
+        "imagen": "https://static.vecteezy.com/system/resources/previews/008/519/510/non_2x/black-pen-cutout-file-png.png"
+      },
+      {
+        "titulo": "Marcadores, paquete de 10",
+        "descripcion": "Paquete de 10 marcadores permanentes de colores variados.",
+        "precio": 300.00,
+        "imagen": "https://comsucre.com.ec/wp-content/uploads/2022/10/dr-mp-10.png"
+      },
+      {
+        "titulo": "Regla de acero inoxidable de 30 cm",
+        "descripcion": "Regla de acero inoxidable de 30 cm con medidas en centímetros y pulgadas.",
+        "precio": 120.00,
+        "imagen": "https://www.suprabond.com/wp-content/uploads/2018/11/Imagen2-324x162.png"
+      },
+      {
+        "titulo": "Goma de borrar",
+        "descripcion": "Goma de borrar blanca, no deja residuos, ideal para papel y lápiz.",
+        "precio": 40.00,
+        "imagen": "https://static.vecteezy.com/system/resources/thumbnails/011/652/266/small/eraser-3d-render-icon-illustration-png.png"
+      },
+      {
+        "titulo": "Tijeras de acero inoxidable",
+        "descripcion": "Tijeras de acero inoxidable de 21 cm, aptas para papel y tela.",
+        "precio": 200.00,
+        "imagen": "https://png.pngtree.com/png-clipart/20231208/original/pngtree-scissors-isolated-stainless-photo-png-image_13798453.png"
+      },
+      {
+        "titulo": "Pegamento en barra",
+        "descripcion": "Pegamento en barra de 22g, no tóxico, ideal para papel y cartón.",
+        "precio": 60.00,
+        "imagen": "https://cdn-icons-png.flaticon.com/512/309/309117.png"
+      },
+      {
+        "titulo": "Cinta adhesiva transparente",
+        "descripcion": "Rollo de cinta adhesiva transparente de 12mm x 33m.",
+        "precio": 65.00,
+        "imagen": "https://static.vecteezy.com/system/resources/previews/008/491/368/original/duct-tape-roll-design-illustration-free-png.png"
+      },
+      {
+        "titulo": "Papel A4",
+        "descripcion": "Resma de papel tamaño A4, 500 hojas, blanco, 80g/m².",
+        "precio": 600.00,
+        "imagen": "https://acdn.mitiendanube.com/stores/001/240/419/products/resma-autor-a4-80-ledesma1-3ed52d88f7c0fdd16316545747414115-1024-1024.png"
+      }
+]
