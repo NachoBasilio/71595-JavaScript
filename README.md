@@ -1,6 +1,6 @@
 # Comisión 71595 - JavaScript en Coderhouse
 
-Bienvenidos al repositorio de la comisión 62010 de JavaScript en Coderhouse. Este repositorio está a cargo del profesor Ignacio Nicolas Basilio Buracco.
+Bienvenidos al repositorio de la comisión 71595 de JavaScript en Coderhouse. Este repositorio está a cargo del profesor Ignacio Nicolas Basilio Buracco.
 
 ## Contenido del Repositorio
 
