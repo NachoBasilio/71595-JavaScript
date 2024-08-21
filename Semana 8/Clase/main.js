@@ -19,12 +19,8 @@ function logicaDeQuienEsEsePokemon(nombre){
     botonEnviar.addEventListener("click", ()=>{
         if(input.value.toLowerCase() === nombre.toLowerCase()){
             alerta.innerText = "Ganaste!!!"
-            pokemonRandom = Math.floor(Math.random() * 151)
-            llamadoraDeUnPokemon(pokemonRandom)
         }else{
             alerta.innerText = "Perdiste"
-            pokemonRandom = Math.floor(Math.random() * 151)
-            llamadoraDeUnPokemon(pokemonRandom)
         }
     })
 }
