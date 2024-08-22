@@ -23,10 +23,22 @@ async function llamadoraDeUnPokemon(numero){
 
 function verificarRespuesta(){
     if(input.value.toLowerCase() === nombreActual.toLowerCase()){
-        alerta.innerText = "¡Ganaste!"
+        Swal.fire({
+            title:"¡Ganaste vamos por mas!",
+            timer: 3000,
+            timerProgressBar: true,
+            imageUrl: "https://gifdb.com/images/high/happy-dancing-pikachu-bq9scc4eo2ox1y94.gif",
+            showConfirmButton: false
+        })
         puntos++
     } else {
-        alerta.innerText = "Perdiste"
+        Swal.fire({
+            title:"Perdiste, pero podes seguir jugando",
+            timer: 3000,
+            timerProgressBar: true,
+            imageUrl: "https://media.tenor.com/-kUSrDb9vQIAAAAM/pikach.gif",
+            showConfirmButton: false
+        })
     }
     pokemonRandom = Math.floor(Math.random() * 151)
     input.value = ""
@@ -45,3 +57,4 @@ input.addEventListener("keydown", (event) => {
 })
 
 llamadoraDeUnPokemon(pokemonRandom)
+

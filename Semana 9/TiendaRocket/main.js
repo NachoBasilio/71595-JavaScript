@@ -51,7 +51,7 @@ const loader = ()=>{
 }
 
 const actualizarCarrito = () => {
-    carrito.innerHTML = "";
+    carrito.innerHTML = ""
     Carrito.forEach(el => {
         carrito.innerHTML += `
             <div class="PokemoEnCarrito">
@@ -112,7 +112,15 @@ const creadoraDePokemon = (pokemon) => {
 
     boton.addEventListener("click", () => {
         agregarAlCarrito(pokemon)
-        //Aca (Agregar producto)
+        Swal.fire({
+            toast: true,
+            title: "Ya esta tu pokemon en el carrito",
+            position: "bottom-end",
+            timer: 2000,
+            timerProgressBar: true,
+            showConfirmButton: false,
+            imageUrl: "https://media.tenor.com/iK8K_IMUvB8AAAAM/pokemon-meowth.gif"
+        })
     });
 };
 
@@ -183,9 +191,21 @@ const llamarDeAUno = async (array) => {
 
 terminarCompra.addEventListener("click", ()=>{
     if(Carrito.length === 0){
-        //Aca (No hay nada en el carrito)
+        Swal.fire({
+            title: "No tenes nada en el carrito",
+            timer: 2000,
+            timerProgressBar: true,
+            showConfirmButton: false,
+            imageUrl:"https://media.tenor.com/AJupCWglORwAAAAM/pokemon-team-rocket.gif"
+        })
     }else{
-        //Aca (Gracias por su compra super legal)
+        Swal.fire({
+            title: "Gracias por su compra",
+            timer: 2000,
+            timerProgressBar: true,
+            showConfirmButton: false,
+            imageUrl:"https://media.tenor.com/4M3NXjrZYqwAAAAM/equipe-rocket.gif"
+        })
     }
     Carrito = []
     actualizarCarrito()
