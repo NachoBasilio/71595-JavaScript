@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apis Gratis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Artículos de Librería</h1><p id="contador"></p>
+    <div id="carritoFisico" class="carritoFisico">
+        <h2>Carrito:</h2>
+    </div>
+    <div id="main"></div>
+    <div id="carrito" class="carrito"><img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <div class="formulario">
+        <form id="productForm">
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo"><br>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion"></textarea><br>
+            <label for="precio">Precio:</label><br>
+            <input type="number" id="precio" name="precio"><br>
+            <label for="imagen">URL de la Imagen:</label><br>
+            <input type="text" id="imagen" name="imagen"><br><br>
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

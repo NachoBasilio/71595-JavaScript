@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2px;
+}
+
+.contenedorImagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #d4d4d4;
+    padding: 20px;
+}
+
+img{
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.titulo{
+    font-size: 1.3rem;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.desc{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.precio{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.carrito{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.carrito img{
+    width: 60px;
+    height: 60px;
+}
+
+/* esto es donde se van a mostrar los productos */
+.carritoFisico{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: 1000;
+}
+
+.carritoFisico.active{
+    transform: translateX(0);
+}
+
+.carritoFisico h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+#borrar{
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tituloProducto{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.prodEnCarrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.precioYCantidad{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario{
+    position: fixed;
+    width: 300px;
+    top: 65vh; /* Ajusta la posición vertical según sea necesario */
+    right: 20px; /* Ajusta la posición horizontal según sea necesario */
+}
+
+.formulario input{
+    width: 100%; /* Asegura que el ancho del input sea del 100% del contenedor */
+    padding: 5px;
+    text-align: center;
+}
+
+.formulario textarea{
+    width: 100%; /* Asegura que el ancho del textarea sea del 100% del contenedor */
+    padding: 5px;
+    text-align: center;
+}
+
+.formulario label{
+    margin-top: 5px;
+    display: inline-block;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "projecto-loco",
+  "version": "0.0.1",
+  "description": "ionasfinasdioom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "projecto",
+    "loco"
+  ],
+  "author": "perrito con chaucha",
+  "license": "MIT"
+}
